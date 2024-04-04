@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace Dyrynda\Maxo\Resources;
 
-use Dyrynda\Maxo\Data\Sms\Response\SendSmsResponse;
+use Dyrynda\Maxo\Data\Sms\Responses\SendSmsResponse;
 use Dyrynda\Maxo\Data\Sms\SendMessageData;
 use Dyrynda\Maxo\Requests\SendSmsMessageRequest;
 use Saloon\Http\BaseResource;

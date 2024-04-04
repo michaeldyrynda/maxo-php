@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Dyrynda\Maxo\Data\Sms\Response;
+namespace Dyrynda\Maxo\Data\Sms\Responses;
 
 use Saloon\Traits\Responses\HasResponse;
 

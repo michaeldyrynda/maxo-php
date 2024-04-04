@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-use Dyrynda\Maxo\Data\Sms\Response\SendSmsResponse;
+use Dyrynda\Maxo\Data\Sms\Responses\SendSmsResponse;
 use Dyrynda\Maxo\Data\Sms\SendMessageData;
 use Dyrynda\Maxo\Maxo;
 use Dyrynda\Maxo\Requests\SendSmsMessageRequest;
