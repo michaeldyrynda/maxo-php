@@ -3,8 +3,10 @@
 declare(strict_types=1);
 
 use Dyrynda\Maxo\Data\Sms\Responses\SendSmsResponse;
+use Dyrynda\Maxo\Data\Sms\Responses\ListInboxesResponse;
 use Dyrynda\Maxo\Data\Sms\SendMessageData;
 use Dyrynda\Maxo\Maxo;
+use Dyrynda\Maxo\Requests\ListSmsInboxesRequest;
 use Dyrynda\Maxo\Requests\SendSmsMessageRequest;
 use Saloon\Exceptions\Request\RequestException;
 use Saloon\Http\Faking\MockClient;
@@ -59,4 +61,20 @@ describe('SMS Resource', function () {
             message: '',
         ));
     })->expectException(RequestException::class);
+
+    it('can list sms inboxes', function () {
+        MockClient::global([
+            ListSmsInboxesRequest::class => MockResponse::fixture('sms/list-inboxes'),
+        ]);
+
+        $maxo = new Maxo('supersecret string key');
+
+        $response = $maxo->sms()->listInboxes();
+
+        expect($response)
+            ->toBeInstanceOf(ListInboxesResponse::class)
+            ->status->toBe(1)
+            ->count->toBe(0)
+            ->inboxes->toBeEmpty();
+    });
 });
