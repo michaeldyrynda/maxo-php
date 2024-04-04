@@ -1,0 +1,12 @@
+{
+    "statusCode": 400,
+    "headers": {
+        "Server": "nginx",
+        "Date": "Thu, 04 Apr 2024 12:20:57 GMT",
+        "Content-Type": "application\/json",
+        "Transfer-Encoding": "chunked",
+        "Connection": "keep-alive",
+        "Access-Control-Allow-Origin": "*"
+    },
+    "data": "{\"status\":0,\"request\":\"sms\\\/send\",\"error\":\"VALIDATION\",\"reason\":\"Message body is required\"}"
+}

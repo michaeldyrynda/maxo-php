@@ -15,6 +15,11 @@
       "Dyrynda\\Maxo\\": "src/"
     }
   },
+  "autoload-dev": {
+    "psr-4": {
+      "Tests\\": "tests/"
+    }
+  },
   "authors": [
     {
       "name": "Michael Dyrynda",
