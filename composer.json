@@ -1,0 +1,34 @@
+{
+  "name": "dyrynda/maxo-sdk-php",
+  "description": "A PHP SDK for the Maxo Telecommunications SMS API",
+  "type": "library",
+  "require": {
+    "saloonphp/saloon": "^3.8"
+  },
+  "require-dev": {
+    "pestphp/pest": "^2.34",
+    "laravel/pint": "^1.15"
+  },
+  "license": "MIT",
+  "autoload": {
+    "psr-4": {
+      "Dyrynda\\Maxo\\": "src/"
+    }
+  },
+  "authors": [
+    {
+      "name": "Michael Dyrynda",
+      "email": "michael@dyrynda.com.au"
+    }
+  ],
+  "config": {
+    "allow-plugins": {
+      "pestphp/pest-plugin": true
+    }
+  },
+  "scripts": {
+    "fix-style": "vendor/bin/pint",
+    "check-style": "vendor/bin/pint --dry-run",
+    "test": "vendor/bin/pest"
+  }
+}
