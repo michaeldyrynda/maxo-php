@@ -1,5 +1,5 @@
 {
-  "name": "dyrynda/maxo-sdk-php",
+  "name": "dyrynda/maxo-php",
   "description": "A PHP SDK for the Maxo Telecommunications SMS API",
   "type": "library",
   "require": {
